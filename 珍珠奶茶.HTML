@@ -18,28 +18,21 @@
         header{
             background-color: wheat;
             color: #fff;
-            padding: 20px;
 
+            /* padding: 10px; */
         }
 
         .content{
             display: flex; 
-            flex-wrap: wrap; /*換行*/
-            justify-content: center;
-            padding: 20px;
+            float: left;
         }
 
         a{  display: block;
             width: 100%;
             line-height: 80px;
             text-decoration: none;
-            font-size: 28px;
+            font-size: 24px;
             color:#fff;
-
-        }
-
-        .a2{
-            text-align: right;
         }
 
         a:hover{
@@ -47,15 +40,13 @@
         background-color: skyblue;
         }       
 
-        .exerciseList .exerciseForList:hover{
+        /* .exerciseList .exerciseForList:hover{
         background-color: #a09380;
-        }
-
+        } */
 
         img{ 
         width: 50%;
         margin: auto;
-        /* vertical-align: middle; */
         display: block;
         }
 
@@ -63,9 +54,6 @@
                 background-color: #333;
             }
 
-        .logo{
-            float: left;
-            }
 
         .mainNav{
             display: inline-block;
@@ -75,7 +63,7 @@
 
         ul {
         display: flex;
-        justify-content: space-between;
+        justify-content:flex-end;
         list-style: none;
         padding: 0;
             }
@@ -95,13 +83,15 @@
             font-size: 24px;
         }
 
+        .location{
+            justify-content: flex-end;
+        }
 
         @media (min-width: 320px) and (max-width: 480px) {
             header{
                 background-color: chocolate;
                 color: #fff;
-                padding: 20px;
-                
+                /* padding: 20px; */
             }
 
             body{
@@ -116,14 +106,15 @@
 
             p{
             font-size: 20px;
-        }
+            }
+
             footer{
                 background-color: #333;
             }
 
             a{
                 color: sandybrown;
-                font-size: large;
+                font-size: 18px;
             }
 
             a:hover{
@@ -141,17 +132,29 @@
     </style>
 </head>
 <body>
-        <header>
+    <header>
         <div class="content">
-        <h1><b>台灣小吃</b></h1>
+            <h1><b>台灣小吃</b></h1>
+        </div>
         <nav>
-        <ul>
-        <li><a href="珍珠奶茶.HTML" class="a2" >珍珠奶茶</a></li>
-        <li><a href="#" class="a2">臭豆腐</a></li>
-        <li><a href="#" class="a2">蚵仔煎</a></li>
-        <li><a href="#" class="a2">肉燥飯</a></li>
+            <ul>
+        <div>
+            <li><a href="珍珠奶茶.HTML">珍珠奶茶</a></li>
+        </div>
+
+        <div class="location">
+        <li><a href="#">臭豆腐</a></li>
+        </div>
+
+        <div class="location">
+            <li><a href="#">蚵仔煎</a></li>
+        </div>
+
+        <div class="location">
+        <li><a href="#">肉燥飯</a></li>
+        </div>
         </ul>
-    </div>
+    
     </header>
     </nav>
     <section> 
